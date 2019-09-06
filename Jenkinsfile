@@ -24,7 +24,7 @@ pipeline {
                                 ], 
                                 transfers: [
                                     sshTransfer(
-                                        sourceFiles: '/var/lib/jenkins/workspace/apache/index.html',
+                                        sourceFiles: 'index.html',
                                         remoteDirectory: '/var/www/html',
                                         execCommand: 'sudo systemctl restart httpd'
                                     )
@@ -55,7 +55,7 @@ pipeline {
                                 ], 
                                 transfers: [
                                     sshTransfer(
-                                        sourceFiles: '/var/lib/jenkins/workspace/apache/index.html',
+                                        sourceFiles: 'index.html',
                                         remoteDirectory: '/var/www/html',
                                         execCommand: 'sudo systemctl restart httpd'
                                     )
